@@ -14,6 +14,7 @@ def PrintHelp():
 3 - поиск по фамилии/имени
 4 - поиск по номеру телефона
 5 - изменить контакт
+6 - Удаление контакта
 0 - выход
 '''
     print(helpList)
@@ -96,7 +97,8 @@ def PrintBook (phones):
             print("\n%5s" %(id), end = "\t")
             for key in value.values():
                 print("{0:<20}".format(key), end="")
-                
+            
+    #Удаление контакта по ID    
 def Delete (phones):
     get_id = input("Введите ID контакта: ")
     for i in phones:
