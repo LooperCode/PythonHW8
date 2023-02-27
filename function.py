@@ -90,7 +90,7 @@ def Edit (phones):
     return Save(phones) 
 
 def PrintBook (phones):
-    strPrint = '''    ID  Фамилия             Имя                 Телефон''' 
+    strPrint = '''   ID   Фамилия             Имя                 Телефон''' 
     print(strPrint)
     for i in phones:
         for id, value in i.items():
@@ -100,9 +100,11 @@ def PrintBook (phones):
             
     #Удаление контакта по ID    
 def Delete (phones):
+    
+    
     get_id = input("Введите ID контакта: ")
     for i in phones:
         
         i.pop(get_id, None)
-        
+    
     return Save(phones)

@@ -20,14 +20,15 @@ def Command (cmd):
     return True  
 
 #Присваиваем словарь
-phones = LoadData()
+
 
 
 #Постоянный цикл для справочника          
 PrintHelp()
 while True:
+    phones = LoadData()
     try:
-        choice = int(input("Выберите функцию: "))
+        choice = int(input("\n Выберите функцию: "))
         if (not Command(choice)):
             break
     except ValueError:
