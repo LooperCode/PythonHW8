@@ -11,6 +11,8 @@ def Command (cmd):
         Search(phones, cmd)
     elif cmd == 5:
         Edit(phones)
+    elif cmd == 6:
+        Delete(phones)
     elif cmd == 0:
         exit()    
     else:

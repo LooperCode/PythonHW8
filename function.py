@@ -97,4 +97,10 @@ def PrintBook (phones):
             for key in value.values():
                 print("{0:<20}".format(key), end="")
                 
-                       
+def Delete (phones):
+    get_id = input("Введите ID контакта: ")
+    for i in phones:
+        
+        i.pop(get_id, None)
+        
+    return Save(phones)
